@@ -1,0 +1,72 @@
+<!doctype>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+        <link href='https://fonts.googleapis.com/css?family=Gloria+Hallelujah' rel='stylesheet' type='text/css'>
+
+        <title>Home | Two Birds</title>
+
+        <style>
+            html, body
+            {
+                background-color: white;
+            }
+
+            /*
+             * Adapated from https://css-tricks.com/centering-css-complete-guide/
+             */
+            .container
+            {
+                height: 100%;
+                position: relative;
+                width: 100%;
+            }
+
+            .child
+            {
+                position: absolute;
+                top: 50%;
+                text-align: center;
+                transform: translateY(-50%);
+                width: 100%;
+            }
+
+            .child *
+            {
+                clear: both;
+                display: block;
+                margin: 0 auto;
+            }
+
+            .email
+            {
+                color: darkgray;
+                font-family: 'Gloria Hallelujah', sans-serif;
+                font-size: 2em;
+                text-decoration: none;
+            }
+
+            .email:hover
+            {
+                text-decoration: underline;
+            }
+
+            .icon, .logo
+            {
+                min-width: 350px;
+                max-width: 500px;
+                width: 50%;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="child">
+                <img src="images/icon.png" class="icon">
+                <img src="images/logo.png" class="logo">
+
+                <a class="email" href="mailto:info@thetwobirds.net">info@thetwobirds.net</a>
+            </div>
+        </div>
+    </body>
+</html>
